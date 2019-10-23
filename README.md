@@ -1,6 +1,24 @@
 # ArTalk Android Push Notification Plugin
 
 ArTalk is a free push notification service for mobile apps. This plugin makes it easy to integrate your native Android or iOS app with ArTalk.
+# Download
+#Step 1:
+Add it in your root build.gradle at the end of repositories:
+``` groovy
+allprojects {
+		repositories {
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+#Step 2:
+Add the dependency:
+```groovy
+  implementation 'com.github.araditc:Artalk:1.0.4'
+```
+
+# Introduction
+
 
 # Installation
 See ArTalk's Android Native SDK Setup Guide for documentation.
