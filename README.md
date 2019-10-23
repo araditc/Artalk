@@ -4,7 +4,7 @@ ArTalk is a free push notification service for mobile apps. This plugin makes it
 # Introduction
 This Code Put Application Class 
 ```java
-Artalk.Initialize(context);
+Artalk.Initialize(this);
 ```
 
 New Listener for message
@@ -13,7 +13,7 @@ Artalk.getInstance().SetImessage(Imessage imessage);
 ```
 Sample Listener for receive message
 ```java
-public Class App extend Application implements Imessage {
+public class App extends Application implements Imessage {
 
     @Override
     public void MessageReceive(Message message) {
@@ -21,13 +21,48 @@ public Class App extend Application implements Imessage {
     }
 }
 ```
+```java
+//Get Package Name 
+String PackageInfo = UtilSdk.getPackageName(this);
+
+//Get Device Name
+String DeviceName = UtilSdk.getDeviceName();
+
+//Get Version
+String Version = UtilSdk.getVersion(this);
+
+//Get Firebase Token
+Observable<String> Token = new UtilSdk().getDeviceToken();
+Token.subscribeOn(Schedulers.io())
+        .observeOn(AndroidSchedulers.mainThread())
+	.subscribe(new Observer<String>() {
+	    @Override
+            public void onSubscribe(Disposable d) {
+
+            }
+	    @Override
+            public void onNext(String s) {
+                Log.i("Token", s);
+            }
+            @Override
+            public void onError(Throwable e) {
+
+            }
+            @Override
+            public void onComplete() {
+
+            }
+	});
+	
+```
+
 
 
 # Installation
 See ArTalk's Android Native SDK Setup Guide for documentation.
 #Step 1:
 Add it in your root build.gradle at the end of repositories:
-``` groovy
+``` gradle
 allprojects {
 		repositories {
 			maven { url 'https://jitpack.io' }
@@ -36,7 +71,7 @@ allprojects {
 ```
 #Step 2:
 Add the dependency:
-```groovy
+```gradle
   implementation 'com.github.araditc:Artalk:1.0.4'
 ```
 # API
