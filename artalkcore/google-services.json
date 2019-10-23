@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "750151609728",
+    "firebase_url": "https://artalkcore.firebaseio.com",
+    "project_id": "artalkcore",
+    "storage_bucket": "artalkcore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:750151609728:android:461195f6589a84b6",
+        "android_client_info": {
+          "package_name": "com.araditc.artalkcore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "750151609728-90auipfkaa20kccn9cvb74380qbqrbae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0ZGKG7h_NySzck1nxEqBp1ecdaeYqZmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "750151609728-90auipfkaa20kccn9cvb74380qbqrbae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

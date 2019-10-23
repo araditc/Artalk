@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArtalkExmaple.iml" filepath="$PROJECT_DIR$/ArtalkExmaple.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/artalkcore/artalkcore.iml" filepath="$PROJECT_DIR$/artalkcore/artalkcore.iml" />
+    </modules>
+  </component>
+</project>
