@@ -20,7 +20,7 @@ public Class App extend Application implements Imessage {
         
     }
 }
-```java
+```
 
 
 # Installation
